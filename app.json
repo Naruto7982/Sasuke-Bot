@@ -1,38 +1,29 @@
 {
-  "name": "TheMystic-Bot-MD",
-  "website": "https://github.com/BrunoSobrino",
-  "description": "Subscribete a The ITACHI Borkers - Bot (≧▽≦)",
-  "repository": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
-  "logo": "https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/pictures/heroku-icon.jpg",
-  "success_url": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
-  "keywords": [
-    "nodejs",
-    "heroku",
-    "bot",
-    "bots",
-    "bot",
-    "spanish",
-    "whatsapp",
-    "termux",
-    "shadow",
-    "multi-device",
-    "md",
-    "whatsappbot",
-    "oficial",
-    "whatsapp-md",
-    "themysticbot",
-    "themystic-bot",
-    "themystic-bot-md"],
-  "image": "heroku/nodejs",
-  "buildpacks": [
+  "name": "whatsapp-bot (RAPHAEL-BOT)",
+  "description": "Whatsapp bot.",
+  "keywords": ["whatsapp bot"],
+  "logo": "https://telegra.ph/file/3694d5edde3846459647b.jpg",
+  "repository": "https://github.com/DK3MK/RAPHAEL-BOT",
+  "stack": "container",
+  "env": {
+     "DK3MK": {
+      "description": "I love you dark man",
+      "required": false,
+      "value": "dk3mk"
+    }
+    },
+    "buildpacks": [
     {
       "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
-    }    
- ]
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
 }
