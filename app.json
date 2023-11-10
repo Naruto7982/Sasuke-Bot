@@ -1,38 +1,60 @@
 {
-  "name": "TheMystic-Bot-MD",
-  "website": "https://github.com/BrunoSobrino",
-  "description": "Subscribete a The Shadow Borkers - Bot (≧▽≦)",
-  "repository": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
-  "logo": "https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/pictures/heroku-icon.jpg",
-  "success_url": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+  "name": "whatsapp-bot (GURU-BOT)",
+  "description": " Whatsapp bot.",
   "keywords": [
-    "nodejs",
-    "heroku",
-    "bot",
-    "bots",
-    "bot",
-    "spanish",
-    "whatsapp",
-    "termux",
-    "shadow",
-    "multi-device",
-    "md",
-    "whatsappbot",
-    "oficial",
-    "whatsapp-md",
-    "themysticbot",
-    "themystic-bot",
-    "themystic-bot-md"],
-  "image": "heroku/nodejs",
-  "buildpacks": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/Guru322/GURU-BOT",
+  "stack": "container",
+  "env": {
+    "DATABASE_URL": {
+      "description": "your mongodb database url",
+      "required": false,
+      "value": ""
+    },
+    "SESSION_ID": {
+      "description": "your session id",
+      "required": true,
+      "value": ""
+    },
+    "PRIVATE": {
+      "description": "Set it true if you want to make the bot private, leave Blank for public",
+      "required": false,
+      "value": ""
+    },
+    "PREFIX": {
+      "description": "put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",
+      "required": false,
+      "value": ""
+    },
+     "HKEY": {
+      "description": "Put your Heroku api key Here , Get one from here https://dashboard.heroku.com/account",
+      "required": true,
+      "value": ""
+    },
+     "HAPP": {
+      "description": "Put the Heroku app name, same as above entered",
+      "required": true,
+      "value": ""
+    },
+     "REMOVEBG_KEY": {
+      "description": "your RemoveBg api key",
+      "required": false,
+      "value": ""
+    }
+    },
+    "buildpacks": [
     {
       "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
-    }    
- ]
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
 }
