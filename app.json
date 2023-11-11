@@ -1,18 +1,19 @@
 {
-  "name": "The-LoliBot-MD",  
-  "description": "Super Bot WhatsApp",
-  "repository": "https://github.com/elrebelde21/The-LoliBot-MD",
-  "logo": "https://i.imgur.com/8fK4h6F.jpg",
-  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
-    }    
- ]
-}
+    "name": "A17-MD",
+    "description": "A whatsApp bot based on Baileysjs linrary (Ts+Js) with Multi Device support",
+    "repository": "https://github.com/Kai0071/A17",
+    "logo": "https://wallpapercave.com/wp/wp6471201.jpg",
+    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+     "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "eco"
+          }
+      }
+  }
+  
