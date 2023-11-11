@@ -1,9 +1,9 @@
 {
-  "name": "Gojo-Satoru",
-  "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/nexusNw/Gojo-Satoru",
-  "logo": "https://telegra.ph/file/4c2c0174e86ac3bac2ba8.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "name": "The-LoliBot-MD",  
+  "description": "Super Bot WhatsApp",
+  "repository": "https://github.com/elrebelde21/The-LoliBot-MD",
+  "logo": "https://i.imgur.com/8fK4h6F.jpg",
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
@@ -12,16 +12,7 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
-        },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
-  ],
-   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
+    }    
+ ]
 }
