@@ -1,33 +1,27 @@
 {
-	"name": "Deploy",
-	"description": "inrl-md",
-	"keywords": [
-		"inrl"
-	],
-	"repository": "https://github.com/inrl-official/inrl-bot-md",
-	"stack": "container",
-	"env": {
-	"SESSION_ID": {
-		"description": "to run the bot",
-		"required": true
-		},
-       "HEROKU_API_KEY": {
-            "description": "For updating bot and setting vars remotely",
-            "required": true
+  "name": "Gojo-Satoru",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://github.com/nexusNw/Gojo-Satoru",
+  "logo": "https://telegra.ph/file/4c2c0174e86ac3bac2ba8.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
         },
-        "HEROKU_APP_NAME": {
-            "description": "Exact name which you gave at the top",
-            "required": true
-        },
-	"MONGO_URL": {
-		"description": "enter db url to work the bot without limit",
-		"required": false
-		}
-	},
-"buildpacks": [{
-      "url": "heroku-community/apt"
-      },
-      {
+    {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-      }]
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
