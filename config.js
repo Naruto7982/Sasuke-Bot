@@ -8,16 +8,16 @@ import axios from 'axios'
 import moment from 'moment-timezone' 
 
 global.owner = [
-  ['201114329294', '❤️‍🔥ITACHI❤️‍🔥', true],
-  ['201114329294', 'ITACHI', true],
-  ['201114329294', '❤️‍🔥ITACHI❤️‍🔥', true],
-  ['201114329294', 'ITACHI', true],
- ['201114329294', '❤️‍🔥ITACHI❤️‍🔥', true],
+  ['201224563219', '❤️‍🔥NARUTO', true],
+  ['201114329294', 'naruto', true],
+  ['201224563219', '❤️‍🔥NARUTO❤️‍🔥', true],
+  ['201114329294', 'naruto', true],
+ ['201114329294', '❤️‍🔥NARUTO❤️‍🔥', true],
 ]
 
-global.suittag = ['201114329294'] 
-global.prems = ['201114329294', '201114329294'] 
-global.reportes_solicitudes = ['201114329294']
+global.suittag = ['201224563219'] 
+global.prems = ['201224563219', '201224563219'] 
+global.reportes_solicitudes = ['201224563219']
 
 global.packname = '『𝐬𝐚𝐬𝐮𝐤𝐞 𝐛𝐨𝐭 🩸』'
 global.author = '『 𝐬𝐚𝐬𝐮𝐤𝐞 𝐛𝐨𝐭 🩸 』'
